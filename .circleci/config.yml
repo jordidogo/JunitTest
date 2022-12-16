@@ -37,9 +37,9 @@ jobs:
           name: Run tests with JUnit as reporter
           command: jest --ci --runInBand --reporters=default --reporters=jest-junit
           environment:
-            JEST_JUNIT_OUTPUT_DIR: ./reports/
+            JEST_JUNIT_OUTPUT_DIR: target/surefire-reports/
       - store_test_results:
-          path: ./reports/
+          path: target/surefire-reports/
 
 
 # Invoke jobs via workflows
