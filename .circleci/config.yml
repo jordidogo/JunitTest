@@ -28,7 +28,7 @@ jobs:
           command: mvn test
       # XML TEST
       - store_test_results:
-          path: **/target/surfire-reports/*xml
+          path: target/surefire-reports/
 
 
 # Invoke jobs via workflows
